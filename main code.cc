@@ -1,14 +1,39 @@
 #include<iostream>
+using namespace std;
 
-class addition{
+class calculator{
 public:
-    
+    int a,b;
+
+    void input(){
+        cout<<"Enter Two Numbers: ";
+        cin>>a>>b;
+    }
+
+    void addition(){
+        cout<<"Addition: " << a+b<<endl;
+    }
+
+    void subtraction(){
+        cout<<"Subtraction: " << a-b<<endl;
+    }   
+
+    void multiplication(){
+        cout<<"Multiplication: " << a*b<<endl;
+    }
+
+    void division(){
+        cout<<"Divide: " << a/b<<endl;
+    }
+
 };
 
-main code::main code(/* args */)
-{
-}
-
-main code::~main code()
-{
+int main(){
+    calculator cal;
+    cal.input();
+    cal.addition();
+    cal.subtraction();
+    cal.multiplication();
+    cal.division();
+    return 0;
 }
